@@ -1,0 +1,150 @@
+body {
+    background-color:lightblue;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #3D43ED;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: black;
+}
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: contrast(175%);
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid white;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: Steelblue;
+    color: white;
+}
+
+p:hover {
+    color: black;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 100px;
+    left: 330px;
+    color: red;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 100px;
+    right: 330px;
+    color: purple;
+}
+
+.top-left {
+    position: absolute;
+    top: 100px;
+    left: 330px;
+    color: blue;
+}
+
+.top-right {
+    position: absolute;
+    top:100px;
+    right: 330px;
+    color: green;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    height: 400px;
+    color: white;
+}
+
+/* clear floats after the columns*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.photo-container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: gray;
+}
+
+.photo-container:hover .overlay {
+    opacity: .5;
+}
+
+.text {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
